@@ -5,7 +5,7 @@ import Helmet from "react-helmet"
 
 import Hero from '../containers/hero/'
 import SpecialsContainer from '../containers/specialsContainer'
-// import FavoriteContainer from './../container/FavoriteContainer'
+import FavoriteContainer from '../containers/favoriteContainer'
 // import FooterContainer from './../container/FooterContainer'
 import SectionSeparator from '../components/sectionSeparator'
 
@@ -38,9 +38,9 @@ export default class Template extends React.Component {
         <SectionSeparator
           text="Favorites"
          />
-        {/*<FavoriteContainer
+        <FavoriteContainer
           icon={scent}
-        />*/}
+        />
         {/*<FooterContainer />*/}
       </div>
     )
