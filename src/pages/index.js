@@ -4,7 +4,7 @@ import Link from "gatsby-link"
 import Helmet from "react-helmet"
 
 import Hero from '../containers/hero/'
-// import SpecialsContainer from './../container/SpecialContainer'
+import SpecialsContainer from '../containers/specialsContainer'
 // import FavoriteContainer from './../container/FavoriteContainer'
 // import FooterContainer from './../container/FooterContainer'
 // import SectionSeparator from './../components/SectionSeparator'
@@ -12,9 +12,8 @@ import Hero from '../containers/hero/'
 // import "../css/typography.css"
 // import styles from "../css/styles.css"
 
-// import hero from './../assets/tangotable-min.png'
-// import scent from './../assets/scent.svg';
-// import image1 from './../assets/tangotable-min.png';
+import scent from '../assets/scent.svg';
+import image1 from '../assets/tangotable-min.png';
 
 export default class Template extends React.Component {
   static propTypes = {
@@ -32,10 +31,10 @@ export default class Template extends React.Component {
           ]}
         />
         <Hero />
-        {/*<SpecialsContainer
+        <SpecialsContainer
           icon={scent}
           image={image1}
-        />*/}
+        />
         {/*<SectionSeparator
           text="Favorites"
          />*/}
