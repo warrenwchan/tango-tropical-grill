@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styles from './styles.scss';
 
-// import Section from '../../components/Section';
-// import Coupon from '../../components/Coupon'
+import Section from '../../components/section/';
+import Coupon from '../../components/coupon'
 
 
 class SpecialsContainer extends Component {

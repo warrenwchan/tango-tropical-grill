@@ -1,0 +1,74 @@
+.big {
+  width: 75vw;
+  height: 30vh;
+  padding: 20px;
+  margin-bottom: 4%;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  text-decoration: none;
+  background-size: cover;
+}
+
+.small {
+  width: 36vw;
+  height: 30vh;
+  padding: 20px;
+  margin-bottom: 4%;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  text-decoration: none;
+  background-size: cover;
+}
+
+.big:hover {
+  border: 3px solid #F53D49;
+}
+
+.small:hover {
+  border: 3px solid #F53D49;
+}
+
+.couponTitle {
+  letter-spacing: 2px;
+}
+
+.couponDescription {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.couponAcception {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.cornerBox {
+  border-top: 25px solid transparent;
+  border-left: 25px solid transparent;
+  border-right: 25px solid #F53D49;
+  border-bottom: 25px solid #F53D49;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 600px) {
+  .small {
+    width: 75vw;
+    margin-bottom: 8%;
+  }
+
+  .big {
+    margin-bottom: 8%;
+  }
+}
