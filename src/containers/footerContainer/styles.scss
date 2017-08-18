@@ -1,0 +1,50 @@
+.footerContainerBackground {
+  background: linear-gradient(135deg, rgba(26,26,26,0.95) 0%,rgba(26,26,26,0.95) 100%), url('./../../assets/tangotable-min.png') no-repeat center;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.footerContainer {
+  margin-top: 50px;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footerMenu {
+  width: 25%;
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItems a {
+  width: 50%;
+  color: white;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.menuItems a:hover {
+  font-size: 1.2rem;
+  color: #F53D49;
+}
+
+.contactInfoContainer {
+  width: 75%;
+}
+
+.tradeMark {
+  width: 100%;
+  margin-top: 50px;
+  padding-top: 10px;
+  opacity: 0.3;
+  text-align: center;
+  border-top: 1px solid #a1a1a1;
+  font-size: 0.7rem;
+}
