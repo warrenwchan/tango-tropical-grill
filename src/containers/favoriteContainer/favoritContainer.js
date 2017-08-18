@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import styles from './styles.scss'
 
-import Section from './../../components/Section';
-import ImageGrid from './../../components/ImageGrid';
+import Section from './../../components/section';
+import ImageGrid from './../../containers/imageGrid';
 
 class FavoriteContainer extends Component {
   render() {

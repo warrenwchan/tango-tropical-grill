@@ -1,0 +1,49 @@
+.small-Img{
+  width: 15vw;
+  height: 15vw;
+  position: relative;
+  color: white;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+.big-Img{
+  height: 15vw;
+  width: 35vw;
+  position: relative;
+  background-color: #4D4D4D;
+  color: white;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.small-Img:hover {
+  -webkit-box-shadow: 5px 5px 35px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 5px 35px 0px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 35px 0px rgba(0,0,0,0.5);
+}
+
+.big-Img:hover {
+  -webkit-box-shadow: 5px 5px 35px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 5px 35px 0px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 35px 0px rgba(0,0,0,0.5);
+}
+
+.imgTextContain {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  font-family: sans-serif;
+}
+
+.dishName {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.dishNumber {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0px;
+}
