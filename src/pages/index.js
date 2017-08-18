@@ -3,8 +3,7 @@ import PropTypes from "prop-types"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
 
-import NavBar from './../containers/navbar/';
-// import Hero from './../layouts//Hero'
+import Hero from '../containers/hero/'
 // import SpecialsContainer from './../container/SpecialContainer'
 // import FavoriteContainer from './../container/FavoriteContainer'
 // import FooterContainer from './../container/FooterContainer'
@@ -32,19 +31,18 @@ export default class Template extends React.Component {
             { name: "keywords", content: "sample, something" },
           ]}
         />
-        {/*<NavBar />*/}
-        {/*<Hero />
-        <SpecialsContainer
+        <Hero />
+        {/*<SpecialsContainer
           icon={scent}
           image={image1}
-        />
-        <SectionSeparator
+        />*/}
+        {/*<SectionSeparator
           text="Favorites"
-         />
-        <FavoriteContainer
+         />*/}
+        {/*<FavoriteContainer
           icon={scent}
-        />
-        <FooterContainer />*/}
+        />*/}
+        {/*<FooterContainer />*/}
       </div>
     )
   }
