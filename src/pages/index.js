@@ -7,7 +7,7 @@ import Hero from '../containers/hero/'
 import SpecialsContainer from '../containers/specialsContainer'
 // import FavoriteContainer from './../container/FavoriteContainer'
 // import FooterContainer from './../container/FooterContainer'
-// import SectionSeparator from './../components/SectionSeparator'
+import SectionSeparator from '../components/sectionSeparator'
 
 // import "../css/typography.css"
 // import styles from "../css/styles.css"
@@ -35,9 +35,9 @@ export default class Template extends React.Component {
           icon={scent}
           image={image1}
         />
-        {/*<SectionSeparator
+        <SectionSeparator
           text="Favorites"
-         />*/}
+         />
         {/*<FavoriteContainer
           icon={scent}
         />*/}

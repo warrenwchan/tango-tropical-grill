@@ -1,0 +1,13 @@
+.imgSeparater {
+  height: 5vh;
+  background: linear-gradient(135deg, rgba(26,26,26,0.7) 0%,rgba(26,26,26,0.7) 100%), url('./../../assets/tangotable-min.png') no-repeat center;
+  background-attachment: fixed;
+}
+
+@media (max-width: 600px) {
+  .imgSeparater {
+    height: 25vh;
+    background: linear-gradient(135deg, rgba(26,26,26,0.7) 0%,rgba(26,26,26,0.7) 100%), url('./../../assets/tangotable-min.png') no-repeat center;
+  background-attachment: fixed;
+  }
+}
