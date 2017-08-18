@@ -1,0 +1,58 @@
+.navBar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.mobileLogoContain {
+  display: flex;
+  justify-content: center;
+}
+
+.mobileLogo {
+  display: none;
+  width: 35vw;
+  padding-top: 50px;
+}
+
+.navContain {
+  margin: 0 auto;
+  max-width: 75vw;
+  padding: 1.45rem 1.0875rem;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLogo {
+  width: 125px;
+  margin-bottom: 0;
+}
+
+.navItems {
+  align-self: center;
+}
+
+.navItem {
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+  margin: 25px;
+  letter-spacing: 1px;
+}
+
+.navItem:hover {
+  color: #F53D49;
+}
+
+/*---------- Mobile ----------*/
+
+@media (max-width: 600px) {
+  .navContain {
+    display: none;
+  }
+
+  .mobileLogo {
+    display: block;
+  }
+}
