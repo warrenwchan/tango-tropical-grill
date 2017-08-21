@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import styles from './styles.scss';
 
-const SectionSeparator = ({text}) => {
+const SectionSeparator = () => {
   return(
-    <div className="imgSeparater">
-    </div>
+    <div className="imgSeparater"></div>
   )
 }
 

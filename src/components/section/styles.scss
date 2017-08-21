@@ -2,11 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 25px;
 }
 
 .sectionTitleContain {
-  margin: 50px;
+  margin: 80px;
   width: 75%;
   text-align: center;
   align-items: center;
@@ -35,4 +34,22 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+/*---------- Mobile ----------*/
+
+@media (max-width: 600px) {
+  .sectionTitle {
+    font-size: 4rem;
+  }
+  .sectionTitleContain {
+    margin: 40px;
+    width: 85%;
+  }
+  .sectionIcon {
+    margin: 10px;
+  }
+  .couponContain {
+    max-width: 85%;
+  }
 }

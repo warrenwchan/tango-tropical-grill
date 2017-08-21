@@ -47,3 +47,21 @@
   position: absolute;
   bottom: 0px;
 }
+
+/*---------- Mobile ----------*/
+
+@media (max-width: 600px) {
+  .small-Img, .big-Img {
+    width: 40vw;
+    height: 50vw;
+  }
+
+  .dishName {
+    font-size: 0.9rem;
+    letter-spacing: 0px;
+  }
+
+  .dishNumber {
+    right: 20px;
+  }
+}

@@ -6,3 +6,11 @@
   justify-content: space-between;
   margin-bottom: 5%;
 }
+
+/*---------- Mobile ----------*/
+
+@media (max-width: 600px) {
+  .imgGrid {
+    max-width: 85vw;
+  }
+}

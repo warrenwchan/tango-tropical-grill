@@ -13,7 +13,6 @@ class Coupon extends Component {
         <h3 className="couponTitle">{this.props.title}</h3>
         <p className="couponDescription">{this.props.desc}</p>
         <p className="couponAcception">*{this.props.acpt}*</p>
-        <div className="cornerBox"></div>
       </a>
     )
   }

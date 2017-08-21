@@ -9,11 +9,7 @@ import FavoriteContainer from '../containers/favoriteContainer'
 import FooterContainer from '../containers/footerContainer'
 import SectionSeparator from '../components/sectionSeparator'
 
-// import "../css/typography.css"
-// import styles from "../css/styles.css"
-
 import scent from '../assets/scent.svg';
-import image1 from '../assets/tangotable-min.png';
 
 export default class Template extends React.Component {
   static propTypes = {
@@ -33,11 +29,8 @@ export default class Template extends React.Component {
         <Hero />
         <SpecialsContainer
           icon={scent}
-          image={image1}
         />
-        <SectionSeparator
-          text="Favorites"
-         />
+        <SectionSeparator/>
         <FavoriteContainer
           icon={scent}
         />
