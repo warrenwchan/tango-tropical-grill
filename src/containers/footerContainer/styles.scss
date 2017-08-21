@@ -43,8 +43,48 @@
   width: 100%;
   margin-top: 50px;
   padding-top: 10px;
-  opacity: 0.3;
   text-align: center;
-  border-top: 1px solid #a1a1a1;
+  border-top: 1px solid rgba(161, 161, 161, 0.3);
   font-size: 0.7rem;
+}
+
+@media (max-width: 600px) {
+  .footerContainer {
+    width: 85%;
+  }
+
+  .footerMenu {
+    width: 100%;
+    margin-bottom: 25px;
+    h2 {
+      border-bottom: 1px solid rgba(161, 161, 161, 0.3);
+      padding-bottom: 5px;
+    }
+  }
+
+  .menuItems {
+    flex-direction: row;
+    p {
+      margin-bottom: 5px;
+      font-size: 0.9rem;
+    }
+  }
+
+  .contactInfoContainer {
+    width: 100%;
+    h2 {
+      border-bottom: 1px solid rgba(161, 161, 161, 0.3);
+      padding-bottom: 5px;
+    }
+  }
+
+  .contactInfoItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .tradeMark {
+    margin-top: 0px;
+  }
 }

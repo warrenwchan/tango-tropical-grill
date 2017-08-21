@@ -23,26 +23,28 @@ class FooterContainer extends Component {
 
           <div className="contactInfoContainer" >
             <h2>Contact</h2>
-            <ContactInfo
-              contactIcon="phone"
-              contactLink="tel:403=275-8181"
-              contactInfo="403-275-8181"
-            />
-            <ContactInfo
-              contactIcon="map-marker"
-              contactLink="http://maps.google.com/?q=14 5010 4th St NE, T2K 5X8 Calgary"
-              contactInfo="14 5010 4th St NE, T2K 5X8 Calgary"
-            />
-            <ContactInfo
-              contactIcon="facebook"
-              contactLink="https://www.facebook.com/TangoVietnameseRestaurant/"
-              contactInfo="Facebook Page"
-            />
-            <ContactInfo
-              contactIcon="instagram"
-              contactLink="https://www.instagram.com/tangotropical/"
-              contactInfo="Instagram"
-            />
+            <div className="contactInfoItems">
+              <ContactInfo
+                contactIcon="phone"
+                contactLink="tel:403=275-8181"
+                contactInfo="403-275-8181"
+              />
+              <ContactInfo
+                contactIcon="map-marker"
+                contactLink="http://maps.google.com/?q=14 5010 4th St NE, T2K 5X8 Calgary"
+                contactInfo="14 5010 4th St NE, T2K 5X8 Calgary"
+              />
+              <ContactInfo
+                contactIcon="facebook"
+                contactLink="https://www.facebook.com/TangoVietnameseRestaurant/"
+                contactInfo="Facebook Page"
+              />
+              <ContactInfo
+                contactIcon="instagram"
+                contactLink="https://www.instagram.com/tangotropical/"
+                contactInfo="Instagram"
+              />
+            </div>
           </div>
 
           <div className="tradeMark">

@@ -19,3 +19,14 @@
   color: #F53D49;
 }
 
+@media (max-width: 600px) {
+  .contactInfo {
+    a{
+      font-size: 0.9rem;
+    }
+  }
+
+  .fa {
+    font-size: 1.5rem !important;
+  }
+}
