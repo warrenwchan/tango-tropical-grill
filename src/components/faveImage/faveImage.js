@@ -5,9 +5,9 @@ class faveImage extends Component {
   render() {
 
     const faveBg = {
-      backgroundImage: 'linear-gradient(135deg, rgba(26,26,26,0.7) 0%,rgba(26,26,26,0.7) 100%), url('+ this.props.image + ')',
+      backgroundImage: 'linear-gradient(135deg, rgba(26,26,26,0.5) 0%,rgba(26,26,26,0.5) 100%), url('+ this.props.image + ')',
       backgroundPosition: 'center',
-      backgroundSize: '400%'
+      backgroundSize: '350%'
     }
 
     return (
