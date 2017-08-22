@@ -1,66 +1,41 @@
-.small-Img{
-  width: 15vw;
-  height: 15vw;
+.faveImage{
   position: relative;
+  padding: 25vh 0;
   color: white;
-  margin-bottom: 25px;
-  border-radius: 5px;
-}
-
-.big-Img{
-  height: 15vw;
-  width: 35vw;
-  position: relative;
-  background-color: #4D4D4D;
-  color: white;
-  margin-bottom: 30px;
-  border-radius: 5px;
-}
-
-.small-Img:hover {
-  -webkit-box-shadow: 5px 5px 35px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 5px 5px 35px 0px rgba(0,0,0,0.5);
-  box-shadow: 5px 5px 35px 0px rgba(0,0,0,0.5);
-}
-
-.big-Img:hover {
-  -webkit-box-shadow: 5px 5px 35px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 5px 5px 35px 0px rgba(0,0,0,0.5);
-  box-shadow: 5px 5px 35px 0px rgba(0,0,0,0.5);
-}
-
-.imgTextContain {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 15px;
 }
 
 .dishName {
   text-transform: uppercase;
   letter-spacing: 2.5px;
+  position: absolute;
+  bottom: 0px;
+  right: 25%;
 }
 
 .dishNumber {
-  font-size: 2rem;
+  font-weight: 700;
+  font-size: 10rem;
+  opacity: 0.5;
   position: absolute;
-  bottom: 0px;
+  bottom: 45%;
+  left: 25%;
 }
 
 /*---------- Mobile ----------*/
 
 @media (max-width: 600px) {
-  .small-Img, .big-Img {
-    width: 40vw;
-    height: 50vw;
-  }
-
   .dishName {
     font-size: 0.9rem;
     letter-spacing: 0px;
+    position: static;
+    text-align: center;
   }
 
   .dishNumber {
-    right: 20px;
+    font-size: 7.5rem;
+    opacity: 0.4;
+    position: static;
+    text-align: center;
+    margin-bottom: 50px;
   }
 }
