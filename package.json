@@ -8,8 +8,7 @@
     "gatsby-link": "^1.6.5",
     "gatsby-plugin-react-helmet": "^1.0.1",
     "gatsby-plugin-sass": "^1.0.2",
-    "react-fontawesome": "^1.6.1",
-    "react-stage": "^2.0.8"
+    "react-fontawesome": "^1.6.1"
   },
   "keywords": [
     "gatsby"
