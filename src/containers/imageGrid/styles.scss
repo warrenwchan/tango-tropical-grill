@@ -13,9 +13,6 @@
 @media (max-width: 600px) {
   .imgGrid {
     max-width: 86vw;
-    height: 50vh;
-    div:only-child {
-      padding-bottom: 20px;
-    }
+    height: 100%;
   }
 }
