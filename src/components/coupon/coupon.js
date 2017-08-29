@@ -53,7 +53,7 @@ class Coupon extends Component {
           <p className="couponAcception">*{this.props.acpt}*</p>
         </div>
         <div id="specialsForm">
-          <form name="coupon" action="thank-you" netlify>
+          <form name="coupon" action="thank-you" data-netlify="true">
             <p>
               <label>Your Name: <input type="text" name="name"/></label>
             </p>
