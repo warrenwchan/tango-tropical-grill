@@ -1,7 +1,6 @@
 .imgGrid {
   width: 100vw;
   max-width: 75vw;
-  height: 50vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -13,6 +12,5 @@
 @media (max-width: 600px) {
   .imgGrid {
     max-width: 86vw;
-    height: 100%;
   }
 }
