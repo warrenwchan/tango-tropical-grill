@@ -11,6 +11,7 @@
   align-items: center;
   font-family: sans-serif;
   text-decoration: none;
+  text-align: center;
   background-size: cover;
   border-radius: 5px;
 }
@@ -28,16 +29,17 @@
   align-items: center;
   font-family: sans-serif;
   text-decoration: none;
+  text-align: center;
   background-size: cover;
   border-radius: 5px;
 }
 
 .big:hover {
-  border: 3px solid #F53D49;
+  box-shadow: 0 0 1pt 2pt #F53D49;
 }
 
 .small:hover {
-  border: 3px solid #F53D49;
+  box-shadow: 0 0 1pt 2pt #F53D49;
 }
 
 .couponTitle {
@@ -52,6 +54,10 @@
 .couponAcception {
   text-align: center;
   font-size: 0.8rem;
+}
+
+#specialsForm {
+  display: none;
 }
 
 @media (max-width: 600px) {
