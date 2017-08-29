@@ -46,11 +46,12 @@ class Coupon extends Component {
     }
 
     return(
-      <a id={this.props.id} className={this.props.size} style={couponBG} onClick={() => (trigger())}>
+      <a id={this.props.id} className={this.props.size} style={couponBG}>
         <div id="specialLabel">
           <h3 className="couponTitle">{this.props.title}</h3>
           <p className="couponDescription">{this.props.desc}</p>
           <p className="couponAcception">*{this.props.acpt}*</p>
+          <button className="couponBtn" type="button" onClick={() => (trigger())} >Claim</button>
         </div>
         <div id="specialsForm">
           <form name="coupon" action="thank-you" data-netlify="true">
@@ -61,7 +62,8 @@ class Coupon extends Component {
               <label>Your Email: <input type="email" name="email"/></label>
             </p>
             <p>
-              <button type="submit">Send</button>
+              <button className="couponBtn" type="submit">Send</button>
+              <button className="couponBtn" type="button" onClick={() => (trigger())}>Cancel</button>
             </p>
           </form>
         </div>

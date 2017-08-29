@@ -60,6 +60,17 @@
   display: none;
 }
 
+.couponBtn {
+  width: 150px;
+  height: 40px;
+  color: white;
+  background-color: rgba(186, 186, 186, 0.9);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 8px 6px -6px black;
+  margin: 5px;
+}
+
 @media (max-width: 600px) {
   .small {
     width: 85vw;
