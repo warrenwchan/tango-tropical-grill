@@ -16,11 +16,20 @@
 
 .footerMenu {
   width: 25%;
+  h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+  }
 }
 
 .menuItems {
   display: flex;
   flex-direction: column;
+  a {
+    font-weight: 100;
+    margin-bottom: 15px;
+  }
 }
 
 .menuItems a {
@@ -37,11 +46,16 @@
 
 .contactInfoContainer {
   width: 75%;
+  h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+  }
 }
 
 .tradeMark {
   width: 100%;
-  margin-top: 50px;
+  margin: 25px 0;
   padding-top: 10px;
   text-align: center;
   border-top: 1px solid rgba(161, 161, 161, 0.3);

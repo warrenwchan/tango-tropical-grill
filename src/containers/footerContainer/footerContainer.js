@@ -16,6 +16,7 @@ class FooterContainer extends Component {
             <h2>Menu</h2>
             <div className="menuItems">
               <a href="#specials"><p>Specials</p></a>
+              <a href="#contact"><p>Combos</p></a>
               <a href="#favorites"><p>Favorites</p></a>
               <a href="#contact"><p>Contact</p></a>
             </div>
