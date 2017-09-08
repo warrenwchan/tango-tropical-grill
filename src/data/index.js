@@ -1,4 +1,43 @@
 module.exports = {
+  specials: [
+    {
+      title: `Suns out Búns out`,
+      desc: `Get a free soda with a purchase of a bún for $10.95`,
+      size: `big`,
+      acpt: `Applies to #21 - #26, #28`,
+      image: `./../../assets/tango-banner.png`
+    },
+    {
+      title: `“Third Wheel Special”`,
+      desc: `Buy 2 Pho noodle bowls, Get 1 bowl 50% off`,
+      size: `small`,
+      acpt: `Applies to #60 - #67`,
+    },
+    {
+      title: `“Tea Time Special”`,
+      desc: `Free spring roll or free coke with purchase of main dish`,
+      size: `small`,
+      acpt: `Excludes #1 - #11 and all subs`,
+    },
+    {
+      title: `$3 Meal size up`,
+      desc: `Add $3 to main dish for bubble tea or vietnamese ice coffee.`,
+      size: `small`,
+      acpt: `Excludes #1 - #11 and all subs`,
+    },
+    {
+      title: `$4 Meal size up`,
+      desc: `Add $4 to main dish for 4 Gyoza or Yam fries.`,
+      size: `small`,
+      acpt: `Excludes #1 - #11 and all subs`,
+    },
+    {
+      title: `Walk the Wok`,
+      desc: `6pm - closing `,
+      size: `big`,
+      acpt: `mains from #29 to #43`,
+    },
+  ],
   favorites: [
     {
       name: `Sate Beef Sub`,

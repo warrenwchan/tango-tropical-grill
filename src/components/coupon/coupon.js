@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import styles from './styles.scss';
 
+import special1 from './../../assets/tango-banner.png';
+import special2 from './../../assets/special2-min.jpg';
+import special3 from './../../assets/d-ng-tri-66959-min.jpg';
+import special4 from './../../assets/frank-mckenna-127336-min.jpg';
+import special5 from './../../assets/christopher-flowers-234182-min.jpg';
+
 class Coupon extends Component {
   constructor(props) {
     super(props);
