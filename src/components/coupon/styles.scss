@@ -1,58 +1,58 @@
-.big {
-  width: 75vw;
-  height: 30vh;
-  padding: 20px;
-  margin-bottom: 4%;
+.couponContainer {
+  width: 33%;
+  display: inline-block;
   position: relative;
-  color: white;
+  outline:1px solid #FFFFFF;
+}
+
+.couponContainer:after {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+
+.elements {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: silver;
+}
+
+.elementContent {
+  height: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  font-family: sans-serif;
-  text-decoration: none;
   text-align: center;
-  background-size: cover;
-  border-radius: 5px;
-}
-
-.small {
-  width: 36vw;
-  height: 30vh;
-  padding: 20px;
-  margin-bottom: 4%;
-  position: relative;
+  align-items: center;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: sans-serif;
-  text-decoration: none;
-  text-align: center;
-  background-size: cover;
-  border-radius: 5px;
 }
 
-.big:hover {
-  box-shadow: 0 0 1pt 2pt #F53D49;
+#specialLabel {
+  width: 80%;
 }
 
-.small:hover {
-  box-shadow: 0 0 1pt 2pt #F53D49;
+.couponContainer:hover {
+  z-index: 1;
+  transition: all 200ms ease;
+  transform: scale(1.02);
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, .2);
 }
+
 
 .couponTitle {
-  letter-spacing: 2px;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 
 .couponDescription {
-  text-align: center;
-  margin-bottom: 0px;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
 }
 
 .couponAcception {
-  text-align: center;
   font-size: 0.8rem;
 }
 

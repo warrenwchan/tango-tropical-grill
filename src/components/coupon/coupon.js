@@ -52,28 +52,32 @@ class Coupon extends Component {
     }
 
     return(
-      <a id={this.props.id} className={this.props.size} style={couponBG}>
-        <div id="specialLabel">
-          <h3 className="couponTitle">{this.props.title}</h3>
-          <p className="couponDescription">{this.props.desc}</p>
-          <p className="couponAcception">*{this.props.acpt}*</p>
-          <button className="couponBtn" type="button" onClick={() => (trigger())} >Claim</button>
+      <div className="couponContainer">
+        <div id={this.props.id} className="elements" style={couponBG}>
+          <div className="elementContent">
+            <div id="specialLabel">
+              <h3 className="couponTitle">{this.props.title}</h3>
+              <p className="couponDescription">{this.props.desc}</p>
+              <p className="couponAcception">*{this.props.acpt}*</p>
+              {/* <button className="couponBtn" type="button" onClick={() => (trigger())} >Claim</button> */}
+            </div>
+            <div id="specialsForm">
+              <form name="coupon" action="thank-you" data-netlify="true">
+                <p>
+                  <label>Your Name: <input type="text" name="name"/></label>
+                </p>
+                <p>
+                  <label>Your Email: <input type="email" name="email"/></label>
+                </p>
+                <p>
+                  <button className="couponBtn" type="submit">Send</button>
+                  <button className="couponBtn" type="button" onClick={() => (trigger())}>Cancel</button>
+                </p>
+              </form>
+            </div>
+          </div>
         </div>
-        <div id="specialsForm">
-          <form name="coupon" action="thank-you" data-netlify="true">
-            <p>
-              <label>Your Name: <input type="text" name="name"/></label>
-            </p>
-            <p>
-              <label>Your Email: <input type="email" name="email"/></label>
-            </p>
-            <p>
-              <button className="couponBtn" type="submit">Send</button>
-              <button className="couponBtn" type="button" onClick={() => (trigger())}>Cancel</button>
-            </p>
-          </form>
-        </div>
-      </a>
+      </div>
     )
   }
 }
