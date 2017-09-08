@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styles from './styles.scss';
 
 import NavBar from '../navbar/';
+import FontAwesome from 'react-fontawesome'
 
 const Hero = () => (
   <div className="heroImageContainer">
@@ -12,6 +13,11 @@ const Hero = () => (
         <p className="heroSubTitle" >Tropical Grill <br/> Vietnamese & Thai Cuisine </p>
         <a className="heroButton" data-scroll href="#contact">Contact</a>
       </div>
+      <a className="heroJump" href="#specials">
+        <FontAwesome
+          name="angle-down"
+        />
+      </a>
     </div>
   </div>
 )

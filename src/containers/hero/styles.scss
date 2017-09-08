@@ -1,6 +1,5 @@
 .heroImageContainer {
   height: 100vh;
-  width: 100vw;
 }
 
 .heroBackgroundImage {
@@ -18,13 +17,13 @@
 }
 
 .heroTitleContain {
-  width: 25vw;
   text-align: center;
   color: white;
 }
 
 .heroTitle {
-  font-family: 'Bellefair', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
   font-size: 5rem;
   text-transform: uppercase;
 }
@@ -34,7 +33,7 @@
   font-size: 1.2rem;
   font-weight: 100;
   letter-spacing: 2px;
-  margin: 50px 0;
+  margin: 35px 0 40px;
 }
 
 .heroButton {
@@ -49,6 +48,28 @@
 .heroButton:hover {
   color: #F53D49;
   border: 1px solid #F53D49;
+}
+
+.heroJump {
+  color: white;
+  position: absolute;
+  bottom: 30px;
+  animation: 1s infinite bounce;
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 10px;
+    color: #F53D49;
+  }
+  50% {
+    bottom: 20px;
+    color: white;
+  }
+  100% {
+    bottom: 10px;
+    color: #F53D49;
+  }
 }
 
 /*---------- Mobile ----------*/
