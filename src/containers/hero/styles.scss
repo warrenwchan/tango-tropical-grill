@@ -1,5 +1,6 @@
 .heroImageContainer {
   height: 100vh;
+  position: relative;
 }
 
 .heroBackgroundImage {
@@ -75,12 +76,18 @@
 /*---------- Mobile ----------*/
 
 @media (max-width: 600px) {
+  .heroTitle{
+    font-size: 3rem;
+  }
+
   .heroTitleContain {
     width: 80vw;
   }
 
   .heroSubTitle {
-    margin: 75px 0;
+    font-size: 1rem;
+    letter-spacing: 0px;
+    margin: 120px 0px 100px;
   }
 
   .heroButton {

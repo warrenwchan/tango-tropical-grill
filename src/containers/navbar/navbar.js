@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import styles from './styles.scss';
 
-import logo from './../../assets/tangologo.png';
+import logo from './../../assets/tangologo.svg';
 
 const NavBar = () => (
   <div className="navBar">

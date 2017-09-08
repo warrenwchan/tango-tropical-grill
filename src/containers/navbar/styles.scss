@@ -12,8 +12,6 @@
 
 .mobileLogo {
   display: none;
-  width: 35vw;
-  padding-top: 50px;
 }
 
 .navContain {
@@ -49,11 +47,17 @@
 /*---------- Mobile ----------*/
 
 @media (max-width: 600px) {
+  .navBar {
+    top: auto;
+    bottom: 50%;
+  }
+
   .navContain {
     display: none;
   }
 
   .mobileLogo {
     display: block;
+    width: 200px;
   }
 }
