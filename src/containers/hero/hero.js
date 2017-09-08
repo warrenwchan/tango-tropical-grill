@@ -13,7 +13,9 @@ const Hero = () => (
         <p className="heroSubTitle" >Tropical Grill <br/> Vietnamese & Thai Cuisine </p>
         <a className="heroButton" data-scroll href="#contact">Contact</a>
       </div>
-      <a className="heroJump" href="#specials">
+    </div>
+    <div className="heroJump">
+      <a href="#specials">
         <FontAwesome
           name="angle-down"
         />
