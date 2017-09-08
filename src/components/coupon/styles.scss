@@ -1,5 +1,5 @@
 .couponContainer {
-  width: 33%;
+  width: 33.33%;
   display: inline-block;
   position: relative;
   outline:1px solid #FFFFFF;
@@ -47,7 +47,8 @@
 }
 
 .couponDescription {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   margin-bottom: 25px;
 }
 
