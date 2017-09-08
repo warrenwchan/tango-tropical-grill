@@ -40,7 +40,6 @@
   box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, .2);
 }
 
-
 .couponTitle {
   font-size: 2rem;
   font-weight: 700;
@@ -58,6 +57,10 @@
 
 #specialsForm {
   display: none;
+  width: 80%;
+  p {
+    margin-bottom: 25px;
+  }
 }
 
 .couponBtn {
@@ -71,13 +74,12 @@
 }
 
 @media (max-width: 600px) {
-  .small {
-    width: 85vw;
-    margin-bottom: 8%;
+  .couponContainer {
+    width: 100%;
   }
 
-  .big {
-    width: 85vw;
-    margin-bottom: 8%;
+  .couponBtn {
+    width: 220px;
+    margin-bottom: 25px;
   }
 }

@@ -52,14 +52,13 @@ class Coupon extends Component {
     }
 
     return(
-      <div className="couponContainer">
+      <div className="couponContainer" onClick={() => (trigger())}>
         <div id={this.props.id} className="elements" style={couponBG}>
           <div className="elementContent">
             <div id="specialLabel">
               <h3 className="couponTitle">{this.props.title}</h3>
               <p className="couponDescription">{this.props.desc}</p>
               <p className="couponAcception">*{this.props.acpt}*</p>
-              {/* <button className="couponBtn" type="button" onClick={() => (trigger())} >Claim</button> */}
             </div>
             <div id="specialsForm">
               <form name="coupon" action="thank-you" data-netlify="true">

@@ -1,5 +1,4 @@
 .couponList {
-  margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -9,5 +8,9 @@
 @media (max-width: 600px) {
   .couponContain {
     margin-bottom: 0px;
+  }
+
+  .couponList {
+    margin-bottom: 0;
   }
 }
