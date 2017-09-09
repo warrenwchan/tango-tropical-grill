@@ -1,5 +1,5 @@
 .sectionContainer {
-  margin: 0 auto;
+  margin: 100px auto;
   width: 100%;
   max-width: 1350px;
 }
@@ -39,6 +39,9 @@
 /*---------- Mobile ----------*/
 
 @media (max-width: 600px) {
+  .sectionContainer{
+    margin: 0 auto;
+  }
   .sectionTitle {
     font-weight: 700;
     font-size: 2rem;

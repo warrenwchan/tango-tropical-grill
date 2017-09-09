@@ -79,6 +79,9 @@
 /*---------- Mobile ----------*/
 
 @media (max-width: 600px) {
+  .heroBackgroundImage {
+    background-size:auto 100%
+  }
   .heroTitle{
     font-size: 3rem;
   }
