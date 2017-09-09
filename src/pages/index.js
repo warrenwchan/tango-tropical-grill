@@ -5,6 +5,7 @@ import Helmet from "react-helmet"
 
 import Hero from '../containers/hero/'
 import SpecialsContainer from '../containers/specialsContainer'
+import ComboContainer from '../containers/comboContainer/'
 import FavoriteContainer from '../containers/favoriteContainer'
 import FooterContainer from '../containers/footerContainer'
 import SectionSeparator from '../components/sectionSeparator'
@@ -28,6 +29,9 @@ export default class Template extends React.Component {
         />
         <Hero />
         <SpecialsContainer
+          icon={scent}
+        />
+        <ComboContainer
           icon={scent}
         />
         <SectionSeparator/>

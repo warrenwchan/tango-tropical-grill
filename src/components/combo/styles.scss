@@ -1,0 +1,64 @@
+.combo {
+  width: 33%;
+  padding-top: 60%;
+  border-radius: 10px;
+  background-color: #303030;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  @media (max-width: 600px) {
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 25px;
+  }
+}
+
+.slideInfoCard {
+  width: 80%;
+  height: 25%;
+  border-radius: 0 0 10px 10px;
+  padding: 10%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%);
+  position: absolute;
+  bottom: -45%;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    @media (max-width: 600px) {
+      font-size: 1.2rem;
+    }
+  }
+  p {
+    font-size: 1.2rem;
+    margin: 25px 0;
+    line-height: 2rem;
+    @media (max-width: 600px) {
+      font-size: 0.8rem;
+      line-height: 1rem;
+      margin: 15% 0;
+    }
+  }
+  .price {
+    font-size: 2.5rem;
+    text-align: right;
+    @media (max-width: 600px) {
+      font-size: 2rem;
+    }
+  }
+  @media (max-width: 600px) {
+    width: 60%;
+    height: 90%;
+    border-radius: 0;
+    bottom: inherit;
+    top: 0;
+    padding: 5%;
+  }
+}
+
+.combo:hover {
+  .slideInfoCard{
+    bottom: 0%;
+  }
+}
