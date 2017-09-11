@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import styles from './styles.scss';
 
-import SpecialForm from '../specialForm/';
-
 import special1 from './../../assets/tango-banner.png';
 import special2 from './../../assets/special2-min.jpg';
 import special3 from './../../assets/d-ng-tri-66959-min.jpg';
@@ -32,8 +30,7 @@ class Coupon extends Component {
       <div className="couponContainer">
         <div className="elements" style={couponBG}>
           <div className="elementContent">
-            {this.state.toggleForm === true ? (
-              <div id="specialsForm">
+          <div id="specialsForm">
                 <form name="coupon" action="thank-you" data-netlify="true">
                   <p>
                     <label>Your Name: <input type="text" name="name"/></label>
@@ -42,7 +39,7 @@ class Coupon extends Component {
                     <label>Your Email: <input type="email" name="email"/></label>
                   </p>
                   <p>
-                    <label className="couponNumberValue" ><input type="coupon" name="coupon" value={this.props.title}/></label>
+                    <label className="couponNumberValue" ><input type="coupon" name="coupon" defaultValue={this.props.title}/></label>
                   </p>
                   <div className="buttonContain">
                     <button className="couponBtn a" type="submit">Send</button>
@@ -50,13 +47,6 @@ class Coupon extends Component {
                   </div>
                 </form>
               </div>
-            ):(
-              <div id="specialLabel" onClick={this.onClick.bind(this)}>
-                <h3 className="couponTitle">{this.props.title}</h3>
-                <p className="couponDescription">{this.props.desc}</p>
-                <p className="couponAcception">*{this.props.acpt}*</p>
-              </div>
-            )}
           </div>
         </div>
       </div>
