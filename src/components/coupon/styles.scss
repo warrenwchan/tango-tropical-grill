@@ -30,10 +30,6 @@
   overflow: hidden;
 }
 
-#specialLabel {
-  width: 80%;
-}
-
 .couponContainer:hover {
   z-index: 1;
   transition: all 200ms ease;
@@ -59,7 +55,6 @@
 
 #specialsForm {
   z-index: 1;
-  width: 80%;
   p {
     margin-bottom: 25px;
     font-size: 1rem;
