@@ -30,31 +30,29 @@ class Coupon extends Component {
       <div className="couponContainer">
         <div className="elements" style={couponBG}>
           <div className="elementContent">
-            <form name="coupon" action="thank-you" data-netlify="true">
-              {this.state.toggleForm === true ? (
-                <div id="specialsForm">
-                    <p>
-                      <label>Your Name: <input type="text" name="name"/></label>
-                    </p>
-                    <p>
-                      <label>Your Email: <input type="email" name="email"/></label>
-                    </p>
-                    <p>
-                      <label className="couponNumberValue" ><input type="coupon" name="coupon" defaultValue={this.props.title}/></label>
-                    </p>
-                    <div className="buttonContain">
-                      <button className="couponBtn a" type="submit">Send</button>
-                      <button className="couponBtn b" type="button" onClick={this.onClick.bind(this)}>Cancel</button>
-                    </div>
+            {this.state.toggleForm === true ? (
+              <form name="coupon" action="thank-you" data-netlify="true">
+                <p>
+                  <label>Your Name: <input type="text" name="name"/></label>
+                </p>
+                <p>
+                  <label>Your Email: <input type="email" name="email"/></label>
+                </p>
+                <p>
+                  <label className="couponNumberValue" ><input type="coupon" name="coupon" defaultValue={this.props.title}/></label>
+                </p>
+                <div className="buttonContain">
+                  <button className="couponBtn a" type="submit">Send</button>
+                  <button className="couponBtn b" type="button" onClick={this.onClick.bind(this)}>Cancel</button>
                 </div>
-              ):(
-                <div id="specialLabel" onClick={this.onClick.bind(this)}>
-                  <h3 className="couponTitle">{this.props.title}</h3>
-                  <p className="couponDescription">{this.props.desc}</p>
-                  <p className="couponAcception">*{this.props.acpt}*</p>
-                </div>
-              )}
-            </form>
+              </form>
+            ):(
+              <div id="specialLabel" onClick={this.onClick.bind(this)}>
+                <h3 className="couponTitle">{this.props.title}</h3>
+                <p className="couponDescription">{this.props.desc}</p>
+                <p className="couponAcception">*{this.props.acpt}*</p>
+              </div>
+            )}
           </div>
         </div>
       </div>
