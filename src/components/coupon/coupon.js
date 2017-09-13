@@ -7,6 +7,8 @@ import special3 from './../../assets/d-ng-tri-66959-min.jpg';
 import special4 from './../../assets/frank-mckenna-127336-min.jpg';
 import special5 from './../../assets/christopher-flowers-234182-min.jpg';
 
+import SpecialForm from '../specialForm/';
+
 class Coupon extends Component {
   constructor(props) {
     super(props);
@@ -31,21 +33,9 @@ class Coupon extends Component {
         <div className="elements" style={couponBG}>
           <div className="elementContent">
             {this.state.toggleForm === true ? (
-              <form id="specialsForm" name="coupon" action="thank-you" data-netlify="true">
-                <p>
-                  <label>Your Name: <input type="text" name="name"/></label>
-                </p>
-                <p>
-                  <label>Your Email: <input type="email" name="email"/></label>
-                </p>
-                <p>
-                  <label className="couponNumberValue" ><input type="coupon" name="coupon" defaultValue={this.props.title}/></label>
-                </p>
-                <div className="buttonContain">
-                  <button className="couponBtn a" type="submit">Send</button>
-                  <button className="couponBtn b" type="button" onClick={this.onClick.bind(this)}>Cancel</button>
-                </div>
-              </form>
+              <SpecialForm
+                onClick={this.onClick.bind(this)}
+              />
             ):(
               <div id="specialLabel" onClick={this.onClick.bind(this)}>
                 <h3 className="couponTitle">{this.props.title}</h3>
