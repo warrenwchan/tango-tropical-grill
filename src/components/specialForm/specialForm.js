@@ -6,7 +6,7 @@ class SpecialForm extends Component {
   render() {
     return (
       <div id="specialsForm">
-        <form name="coupon" action="thank-you" data-netlify="true">
+        <form name="coupon" action="/pages/success/" data-netlify="true">
           <p>
             <label>Your Name: <input type="text" name="name"/></label>
           </p>

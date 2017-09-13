@@ -1,0 +1,64 @@
+// Success Page
+.successBg {
+  background: #FF5F6D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+}
+
+.successContentContain {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.successLogoContainer {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+}
+
+p {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 50px;
+  a {
+    color: white;
+  }
+}
+
+.successLogo {
+  position: relative;
+  margin-bottom: 25%;
+}
+
+.logoShadow {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding-top: 40%;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 64%,rgba(0,0,0,0) 78%);
+}
+
+@media (max-width: 600px) {
+  .successLogoContainer {
+    padding: 0 25px;
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
