@@ -20,13 +20,13 @@ class Coupon extends Component {
   onClick(e){
     e.preventDefault();
     this.setState({toggleForm: !this.state.toggleForm})
-    console.log(this.state.toggleForm)
   }
 
   render() {
     const couponBG = {
       backgroundImage: 'linear-gradient(135deg, rgba(26,26,26,0.5) 0%,rgba(26,26,26,0.5) 100%), url('+ this.props.image + ')',
     }
+
 
     return(
       <div className="couponContainer">
@@ -35,6 +35,7 @@ class Coupon extends Component {
             {this.state.toggleForm === true ? (
               <SpecialForm
                 onClick={this.onClick.bind(this)}
+                title={this.props.title}
               />
             ):(
               <div id="specialLabel" onClick={this.onClick.bind(this)}>

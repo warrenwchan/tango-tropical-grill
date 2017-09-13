@@ -4,9 +4,10 @@ import styles from './styles.scss';
 class SpecialForm extends Component {
   state = {  }
   render() {
+    console.log(this.props.title)
     return (
       <div id="specialsForm">
-        <form name="coupon" action="/pages/success/" data-netlify="true">
+        <form name="coupon" action="../../pages/success/" data-netlify="true">
           <p>
             <label>Your Name: <input type="text" name="name"/></label>
           </p>
@@ -14,7 +15,7 @@ class SpecialForm extends Component {
             <label>Your Email: <input type="email" name="email"/></label>
           </p>
           <p>
-            <label className="couponNumberValue" ><input type="coupon" name="coupon" value={this.props.key}/></label>
+            <label className="couponNumberValue" ><input type="text" name="coupon" value={this.props.title}/></label>
           </p>
           <div className="buttonContain">
             <button className="couponBtn a" type="submit">Send</button>
