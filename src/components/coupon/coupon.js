@@ -31,7 +31,7 @@ class Coupon extends Component {
         <div className="elements" style={couponBG}>
           <div className="elementContent">
             {this.state.toggleForm === true ? (
-              <form name="coupon" action="thank-you" data-netlify="true">
+              <form id="specialsForm" name="coupon" action="thank-you" data-netlify="true">
                 <p>
                   <label>Your Name: <input type="text" name="name"/></label>
                 </p>
