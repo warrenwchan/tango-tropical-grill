@@ -13,6 +13,17 @@
   align-items: center;
 }
 
+.backToHomeLink {
+  position: absolute;
+  bottom: 50px;
+  p {
+    font-size: 1.5rem;
+    a {
+      color: white;
+    }
+  }
+}
+
 .successLogoContainer {
   margin: 0 auto;
   text-align: center;
@@ -25,15 +36,6 @@
     font-size: 2rem;
     font-weight: 700;
     margin-top: 20px;
-  }
-}
-
-p {
-  font-size: 1.5rem;
-  position: absolute;
-  bottom: 50px;
-  a {
-    color: white;
   }
 }
 

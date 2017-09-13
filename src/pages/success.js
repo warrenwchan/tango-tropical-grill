@@ -19,7 +19,9 @@ class Success extends Component {
               <h2>Enjoy your meal!</h2>
             </div>
           </div>
-          <p><Link to="/">Back to 🏠</Link></p>
+          <div className="backToHomeLink">
+            <p><Link to="/">Back to 🏠</Link></p>
+          </div>
         </div>
       </div>
     );
