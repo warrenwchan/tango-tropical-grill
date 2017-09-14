@@ -4,6 +4,7 @@ import styles from './styles.scss';
 class SpecialForm extends Component {
   state = {  }
   render() {
+    console.log(this.props.title)
     return (
       <div id="specialsForm">
         <form name="coupon" action="../../pages/received/" data-netlify="true">

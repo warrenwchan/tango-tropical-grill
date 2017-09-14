@@ -6,13 +6,11 @@ class Combo extends Component {
   render() {
 
     const comboBG = {
-      backgroundImage: 'linear-gradient(180deg, rgba(26,26,26,0.5) 0%,rgba(26,26,26,0.8) 100%), url('+ this.props.image + ')',
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
+      backgroundImage: 'linear-gradient(135deg, rgba(26,26,26,0.5) 0%,rgba(26,26,26,0.5) 100%), url('+ this.props.image + ')',
     }
 
     return(
-      <div className="combo" style={comboBG}>
+      <div className="combo" styles={comboBG}>
         <div className="slideInfoCard">
           <h2>{this.props.title}</h2>
           <p>
