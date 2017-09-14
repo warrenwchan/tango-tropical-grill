@@ -27,7 +27,6 @@ class Coupon extends Component {
       backgroundImage: 'linear-gradient(135deg, rgba(26,26,26,0.5) 0%,rgba(26,26,26,0.5) 100%), url('+ this.props.image + ')',
     }
 
-
     return(
       <div className="couponContainer">
         <div className="elements" style={couponBG}>
