@@ -24,7 +24,9 @@ class Coupon extends Component {
 
   render() {
     const couponBG = {
-      backgroundImage: 'linear-gradient(135deg, rgba(26,26,26,0.5) 0%,rgba(26,26,26,0.5) 100%), url('+ this.props.image + ')',
+      backgroundImage: 'linear-gradient(180deg, rgba(26,26,26,0.5) 0%,rgba(26,26,26,0.8) 100%), url('+ this.props.image + ')',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
     }
 
     return(

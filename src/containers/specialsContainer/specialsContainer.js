@@ -24,7 +24,7 @@ class SpecialsContainer extends Component {
               desc={special.desc}
               size={special.size}
               acpt={special.acpt}
-              image={`${special.image}`}
+              image={special.image}
             />
           })}
         </div>
