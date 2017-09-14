@@ -35,19 +35,24 @@ class Coupon extends Component {
             {this.state.toggleForm === true ? (
               null
             ):(
-              <div className="specialLabelContain">
-                <div id="specialLabel" onClick={this.onClick.bind(this)}>
-                  <h3 className="couponTitle">{this.props.title}</h3>
-                  <p className="couponDescription">{this.props.desc}</p>
-                  <p className="couponAcception">*{this.props.acpt}*</p>
+              <div className="specialContainer">
+                <div className="specialHitpoint" onClick={this.onClick.bind(this)}>
+                  <div className="specialContent">
+                    <h3 className="couponTitle">{this.props.title}</h3>
+                    <p className="couponDescription">{this.props.desc}</p>
+                    <p className="couponAcception">*{this.props.acpt}*</p>
+                  </div>
                 </div>
               </div>
             )}
-
-            <SpecialForm
-              onClick={this.onClick.bind(this)}
-              title={this.props.title}
-            />
+            <div className="specialContainer">
+              <div className="specialHitpoint">
+                <SpecialForm
+                  onClick={this.onClick.bind(this)}
+                  title={this.props.title}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

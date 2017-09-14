@@ -7,7 +7,7 @@ class SpecialForm extends Component {
     console.log(this.props.title)
     return (
       <div id="specialsForm">
-        <form name="coupon" action="../../pages/success/" data-netlify="true">
+        <form name="coupon" action="../../pages/reveived/" data-netlify="true">
           <p>
             <label>
               Your Name:

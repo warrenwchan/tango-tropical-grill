@@ -29,21 +29,18 @@
 }
 
 .elementContent {
-
-}
-
-.specialLabelContain {
-  padding-top: 100%;
-  position: relative;
-}
-
-#specialLabel {
-  position: absolute;
-  top: 40%;
   height: 100%;
-  text-align: center;
+}
+
+.specialHitpoint {
+  height: 100%;
+  display: flex;
   color: white;
-  overflow: hidden;
+}
+
+.specialContent {
+  text-align: center;
+  margin: auto;
 }
 
 .couponTitle {
@@ -62,75 +59,13 @@
   font-size: 0.8rem;
 }
 
-#specialsForm {
-  z-index: 1;
-  p {
-    margin-bottom: 25px;
-    font-size: 1rem;
-  }
-  input {
-    margin-left: 25px;
-    height: 25px;
-    width: 200px;
-  }
+.specialContainer {
+  height: 100%;
 }
 
-.couponBtn {
-  font-size: 1rem;
-  font-weight: 700;
-  width: 150px;
-  height: 40px;
-  color: white;
-  background-color: rgba(186, 186, 186, 0.9);
-  border: none;
-  border-radius: 5px;
-  margin: 10px;
-}
-
-.a {
-  background-color: #1abc9c;
-}
-
-.b {
-  background-color: #e74c3c;
-}
-
-.couponNumberValue {
-  display: none;
-}
 
 @media (max-width: 600px) {
   .couponContainer {
     width: 100%;
-  }
-
-  .couponBtn {
-    width: 220px;
-    margin-bottom: 25px;
-  }
-  .couponContainer:hover {
-    transform: scale(1);
-  }
-
-  #specialsForm {
-    p {
-      font-size: 1.2rem;
-    }
-    input {
-      margin: 15px 0 0 0;
-      width: 100%;
-    }
-  }
-
-  .buttonContain {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-  }
-
-  .couponBtn {
-    width: 140px;
-    height: 50px;
-    margin: 0;
   }
 }
