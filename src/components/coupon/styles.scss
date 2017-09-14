@@ -3,12 +3,20 @@
   display: inline-block;
   position: relative;
   outline:1px solid #FFFFFF;
+  overflow: hidden;
 }
 
 .couponContainer:after {
   content: '';
   display: block;
   margin-top: 100%;
+}
+
+.couponContainer:hover {
+  z-index: 1;
+  transition: all 200ms ease;
+  transform: scale(1.02);
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, .2);
 }
 
 .elements {
@@ -21,20 +29,21 @@
 }
 
 .elementContent {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  color: white;
-  overflow: hidden;
+
 }
 
-.couponContainer:hover {
-  z-index: 1;
-  transition: all 200ms ease;
-  transform: scale(1.02);
-  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, .2);
+.specialLabelContain {
+  padding-top: 100%;
+  position: relative;
+}
+
+#specialLabel {
+  position: absolute;
+  top: 40%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  overflow: hidden;
 }
 
 .couponTitle {

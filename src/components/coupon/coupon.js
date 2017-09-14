@@ -33,17 +33,21 @@ class Coupon extends Component {
         <div className="elements" style={couponBG}>
           <div className="elementContent">
             {this.state.toggleForm === true ? (
-              <SpecialForm
-                onClick={this.onClick.bind(this)}
-                title={this.props.title}
-              />
+              null
             ):(
-              <div id="specialLabel" onClick={this.onClick.bind(this)}>
-                <h3 className="couponTitle">{this.props.title}</h3>
-                <p className="couponDescription">{this.props.desc}</p>
-                <p className="couponAcception">*{this.props.acpt}*</p>
+              <div className="specialLabelContain">
+                <div id="specialLabel" onClick={this.onClick.bind(this)}>
+                  <h3 className="couponTitle">{this.props.title}</h3>
+                  <p className="couponDescription">{this.props.desc}</p>
+                  <p className="couponAcception">*{this.props.acpt}*</p>
+                </div>
               </div>
             )}
+
+            <SpecialForm
+              onClick={this.onClick.bind(this)}
+              title={this.props.title}
+            />
           </div>
         </div>
       </div>

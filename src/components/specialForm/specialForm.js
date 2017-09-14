@@ -9,13 +9,21 @@ class SpecialForm extends Component {
       <div id="specialsForm">
         <form name="coupon" action="../../pages/success/" data-netlify="true">
           <p>
-            <label>Your Name: <input type="text" name="name"/></label>
+            <label>
+              Your Name:
+              <input type="text" name="name"/>
+            </label>
           </p>
           <p>
-            <label>Your Email: <input type="email" name="email"/></label>
+            <label>
+              Your Email:
+              <input type="email" name="email"/>
+            </label>
           </p>
           <p>
-            <label className="couponNumberValue" ><input type="text" name="coupon" value={this.props.title}/></label>
+            <label className="couponNumberValue">
+              <input type="text" name="coupon" value={this.props.title}/>
+            </label>
           </p>
           <div className="buttonContain">
             <button className="couponBtn a" type="submit">Send</button>
