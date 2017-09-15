@@ -1,15 +1,22 @@
-.faveImage{
-  position: relative;
-  padding: 23vh 0;
+.faveImageContainer {
+  height: 600px;
   color: white;
+  display: flex;
+  align-items: center;
+}
+
+.faveImage{
+  height: 300px;
+  width: 100%;
+  position: relative;
 }
 
 .dishName {
   text-transform: uppercase;
   letter-spacing: 4px;
   position: absolute;
-  bottom: 0px;
-  right: 25%;
+  bottom: -100px;
+  right: 5%;
 }
 
 .dishNumber {
@@ -17,13 +24,16 @@
   font-size: 15rem;
   opacity: 0.5;
   position: absolute;
-  bottom: 45%;
-  left: 25%;
+  top: -45%;
+  left: 5%;
 }
 
 /*---------- Mobile ----------*/
 
 @media (max-width: 600px) {
+  .faveImage {
+    height: 600px;
+  }
   .dishName {
     font-size: 0.9rem;
     letter-spacing: 0px;

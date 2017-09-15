@@ -5,15 +5,17 @@ class faveImage extends Component {
   render() {
 
     const faveBg = {
-      backgroundImage: 'linear-gradient(135deg, rgba(26,26,26,0.5) 0%,rgba(26,26,26,0.5) 100%), url('+ this.props.image + ')',
+      backgroundImage: 'linear-gradient(135deg, rgba(26,26,26,0.1) 0%,rgba(26,26,26,0.1) 100%), url('+ this.props.image + ')',
       backgroundPosition: 'center',
       backgroundSize: 'cover',
     }
 
     return (
-      <div className="faveImage" style={faveBg}>
-        <p className="dishNumber" >{this.props.number}</p>
-        <p className="dishName">{this.props.name}</p>
+      <div className="faveImageContainer" style={faveBg}>
+        <div className="faveImage">
+          <p className="dishNumber" >{this.props.number}</p>
+          <p className="dishName">{this.props.name}</p>
+        </div>
       </div>
     );
   }
