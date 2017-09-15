@@ -19,7 +19,7 @@ class ImageGrid extends Component {
 
     const settings = {
       arrows: false,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 3000,
       slidesToShow: 1,
       speed: 500
