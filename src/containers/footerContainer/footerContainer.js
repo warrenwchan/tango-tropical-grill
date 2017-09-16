@@ -4,6 +4,8 @@ import styles from './styles.scss';
 import Section from './../../components/section';
 import ContactInfo from './../../components/contactInfo';
 
+import {StaticMap} from 'react-map-gl';
+
 class FooterContainer extends Component {
   render() {
 
@@ -21,7 +23,6 @@ class FooterContainer extends Component {
               <a href="#contact"><p>Contact</p></a>
             </div>
           </div>
-
           <div className="contactInfoContainer" >
             <h2>Contact</h2>
             <div className="contactInfoItems">
@@ -47,7 +48,15 @@ class FooterContainer extends Component {
               />
             </div>
           </div>
-
+          <div className="mapContainer">
+            <StaticMap
+              mapboxApiAccessToken="pk.eyJ1Ijoid2FycmVud2NoYW4iLCJhIjoiY2o3bXk4amRuMWVjMDJybGE1bHNwZnZyZyJ9.E3TkyjKkXnnfSmV1hlfp3Q"
+              height={300}
+              latitude={51.096653}
+              longitude={-114.052983}
+              zoom={16}
+            />
+          </div>
           <div className="tradeMark">
             <p>Tango 2017 ©</p>
           </div>
