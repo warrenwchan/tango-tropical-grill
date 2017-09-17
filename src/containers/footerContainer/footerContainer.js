@@ -29,7 +29,7 @@ class FooterContainer extends Component {
               />
               <ContactInfo
                 contactIcon="facebook"
-                contactLink="https://www.facebook.com/TangoVietnameseRestaurant/"
+                contactLink="https://www.facebook.com/TangoVietThai/?ref=br_rs"
                 contactInfo="Facebook Page"
               />
               <ContactInfo

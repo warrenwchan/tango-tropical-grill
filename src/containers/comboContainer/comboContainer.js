@@ -20,7 +20,7 @@ class ComboContainer extends Component {
         <div className="comboContainer">
           <Combo
             title="Combo A"
-            main="Sub from S1 - S"
+            main="Sub from S1 - S7"
             sides="2 Sring Rolls or Yam Fries"
             price="$10"
             image={Sub}
@@ -34,7 +34,7 @@ class ComboContainer extends Component {
           />
           <Combo
             title="Combo C"
-            main="Stir-Fry 29, 32, 38"
+            main="Stir-Fry 29, 32 or 38"
             sides="2 Sring Rolls or Yam Fries"
             price="$15"
             image={Stir}
