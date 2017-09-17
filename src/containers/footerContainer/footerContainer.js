@@ -4,12 +4,8 @@ import styles from './styles.scss';
 import Section from './../../components/section';
 import ContactInfo from './../../components/contactInfo';
 
-import {StaticMap} from 'react-map-gl';
-
 class FooterContainer extends Component {
   render() {
-
-    const MY_API_KEY = "AIzaSyBMm02FIRXk_KnriZ_9w2rdWN7VI25vN0Y"
 
     return (
       <div className="footerContainerBackground" id="contact">
@@ -32,11 +28,6 @@ class FooterContainer extends Component {
                 contactInfo="403-275-8181"
               />
               <ContactInfo
-                contactIcon="map-marker"
-                contactLink="http://maps.google.com/?q=14 5010 4th St NE, T2K 5X8 Calgary"
-                contactInfo="14 5010 4th St NE, T2K 5X8 Calgary"
-              />
-              <ContactInfo
                 contactIcon="facebook"
                 contactLink="https://www.facebook.com/TangoVietnameseRestaurant/"
                 contactInfo="Facebook Page"
@@ -46,16 +37,15 @@ class FooterContainer extends Component {
                 contactLink="https://www.instagram.com/tangotropical/"
                 contactInfo="Instagram"
               />
+              <ContactInfo
+                contactIcon="map-marker"
+                contactLink="http://maps.google.com/?q=14 5010 4th St NE, T2K 5X8 Calgary"
+                contactInfo="14 5010 4th St NE, T2K 5X8 Calgary"
+              />
             </div>
           </div>
           <div className="mapContainer">
-            <StaticMap
-              mapboxApiAccessToken="pk.eyJ1Ijoid2FycmVud2NoYW4iLCJhIjoiY2o3bXk4amRuMWVjMDJybGE1bHNwZnZyZyJ9.E3TkyjKkXnnfSmV1hlfp3Q"
-              height={300}
-              latitude={51.096653}
-              longitude={-114.052983}
-              zoom={16}
-            />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.6398667018975!2d-114.0552372836882!3d51.096653479569824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537165a40317cd99%3A0x5cc67c7f19e74f06!2sTango+Tropical+Grill!5e0!3m2!1sen!2sca!4v1505618464968" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
           </div>
           <div className="tradeMark">
             <p>Tango 2017 ©</p>
