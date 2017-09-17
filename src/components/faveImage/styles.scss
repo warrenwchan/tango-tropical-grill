@@ -36,16 +36,14 @@
   }
   .dishName {
     font-size: 0.9rem;
-    letter-spacing: 0px;
-    position: static;
-    text-align: center;
+    bottom: 25px;
+    text-align: right;
+    line-height: 1.1rem;
   }
 
   .dishNumber {
     font-size: 7.5rem;
-    opacity: 0.4;
-    position: static;
-    text-align: center;
-    margin-bottom: 50px;
+    top: 0;
+    opacity: 0.8;
   }
 }
