@@ -24,8 +24,9 @@ export default class Template extends React.Component {
         <Helmet
           title="Tango Tropical Grill"
           meta={[
-            { name: "description", content: "Sample" },
-            { name: "keywords", content: "sample, something" },
+            { name: "description", content: "Tango Tropical Grill is a casual dining restaurant that specializes in Thai and Vietnamese food located in Calgary, Alberta." },
+            { name: "keywords", content: "Casual restaurant offering a mix of Vietnamese and Thai dishes, including pho, along with a bar" },
+            { name: "author", content: "Warren Chan" }
           ]}
         />
         <Hero />
