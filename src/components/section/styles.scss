@@ -1,6 +1,9 @@
 .sectionContainer {
   margin: 200px auto;
-  max-width: 1350px;
+  width: 1350px;
+  @media (max-width: 1350px) {
+    width: 1024px;
+  }
 }
 
 .sectionTitleContain {
