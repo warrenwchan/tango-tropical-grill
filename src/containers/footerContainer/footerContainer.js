@@ -10,13 +10,30 @@ class FooterContainer extends Component {
     return (
       <div className="footerContainerBackground" id="contact">
         <div className="footerContainer">
-          <div className="footerMenu" >
-            <h2>Menu</h2>
-            <div className="menuItems">
-              <a href="#specials"><p>Specials</p></a>
-              <a href="#contact"><p>Combos</p></a>
-              <a href="#favorites"><p>Favorites</p></a>
-              <a href="#contact"><p>Contact</p></a>
+          <div className="contactInfoContainer" >
+            <h2>Catch Us During</h2>
+            <div className="contactInfoItems">
+              <ContactInfo
+                contactInfo="Monday: 11am - 9pm"
+              />
+              <ContactInfo
+                contactInfo="Tuesday: 11am - 9pm"
+              />
+              <ContactInfo
+                contactInfo="Wednesday: 11am - 9pm"
+              />
+              <ContactInfo
+                contactInfo="Thursday: 11am - 9pm"
+              />
+              <ContactInfo
+                contactInfo="Friday: 11am - 10pm"
+              />
+              <ContactInfo
+                contactInfo="Saturday: 11am - 10pm"
+              />
+              <ContactInfo
+                contactInfo="Sunday: Closed"
+              />
             </div>
           </div>
           <div className="contactInfoContainer" >
@@ -26,26 +43,52 @@ class FooterContainer extends Component {
                 contactIcon="phone"
                 contactLink="tel:403=275-8181"
                 contactInfo="403-275-8181"
+                target="_blank"
               />
               <ContactInfo
                 contactIcon="facebook"
                 contactLink="https://www.facebook.com/TangoVietThai/?ref=br_rs"
                 contactInfo="Facebook Page"
+                target="_blank"
               />
               <ContactInfo
                 contactIcon="instagram"
                 contactLink="https://www.instagram.com/tangotropical/"
                 contactInfo="Instagram"
+                target="_blank"
               />
               <ContactInfo
                 contactIcon="map-marker"
                 contactLink="http://maps.google.com/?q=14 5010 4th St NE, T2K 5X8 Calgary"
                 contactInfo="14 5010 4th St NE, T2K 5X8 Calgary"
+                target="_blank"
               />
             </div>
           </div>
-          <div className="mapContainer">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.6398667018975!2d-114.0552372836882!3d51.096653479569824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537165a40317cd99%3A0x5cc67c7f19e74f06!2sTango+Tropical+Grill!5e0!3m2!1sen!2sca!4v1505618464968" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
+          <div className="contactInfoContainer" >
+            <h2>Menu</h2>
+            <div className="contactInfoItems">
+              <ContactInfo
+                contactLink="#specials"
+                contactInfo="Specials"
+              />
+              <ContactInfo
+                contactLink="#combos"
+                contactInfo="Combos"
+              />
+              <ContactInfo
+                contactLink="#favorites"
+                contactInfo="Favorties"
+              />
+              <ContactInfo
+                contactLink="#location"
+                contactInfo="Location"
+              />
+              <ContactInfo
+                contactLink="#contact"
+                contactInfo="Contact"
+              />
+            </div>
           </div>
           <div className="tradeMark">
             <p>Tango 2017 ©</p>

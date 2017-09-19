@@ -14,7 +14,7 @@ class SpecialsContainer extends Component {
         id="specials"
         title="Specials"
         icon={this.props.icon}
-        subText="We know you’re into deals, so try these out."
+        subText="We know you’re into deals, so try these out. (Tap to claim)"
       >
         <div className="couponList">
           {SpecialsData.specials.map((special, i) => {

@@ -3,13 +3,18 @@ import styles from './styles.scss'
 
 import FontAwesome from 'react-fontawesome'
 
-const ContactInfo = ({contactIcon, contactLink, contactInfo}) => (
+const Icon = (contactIcon) => {
+  if(contactIcon) {
+    return <FontAwesome className="contactIcon" name={contactIcon} />
+  } else {
+    return null
+  }
+}
+
+const ContactInfo = ({contactIcon, contactLink, contactInfo, target}) => (
   <div className="contactInfo">
-    <FontAwesome
-      className="contactIcon"
-      name={contactIcon}
-    />
-    <a className="contactText" target="_blank" href={contactLink}>{contactInfo}</a>
+    {Icon(contactIcon)}
+    <a className="contactText" target={target} href={contactLink}>{contactInfo}</a>
   </div>
 )
 

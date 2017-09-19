@@ -1,0 +1,9 @@
+.mapContainer {
+  width: 100%;
+
+  @media (max-width: 600px) {
+    .mapContainer {
+      width: 600px;
+    }
+  }
+}

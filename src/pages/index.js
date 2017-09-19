@@ -7,6 +7,7 @@ import Hero from '../containers/hero/'
 import SpecialsContainer from '../containers/specialsContainer'
 import ComboContainer from '../containers/comboContainer/'
 import FavoriteContainer from '../containers/favoriteContainer'
+import MapContainer from '../containers/mapContainer/'
 import FooterContainer from '../containers/footerContainer'
 import SectionSeparator from '../components/sectionSeparator'
 
@@ -34,10 +35,11 @@ export default class Template extends React.Component {
         <ComboContainer
           icon={scent}
         />
-        <SectionSeparator/>
         <FavoriteContainer
           icon={scent}
         />
+        <SectionSeparator/>
+        <MapContainer />
         <FooterContainer />
       </div>
     )

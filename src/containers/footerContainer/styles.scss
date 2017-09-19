@@ -18,48 +18,13 @@
   }
 }
 
-.footerMenu {
-  width: 15%;
-  h2 {
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 25px;
-  }
-}
-
-.menuItems {
-  display: flex;
-  flex-direction: column;
-  a {
-    font-weight: 100;
-    margin-bottom: 15px;
-  }
-}
-
-.menuItems a {
-  width: 50%;
-  color: white;
-  letter-spacing: 1px;
-  text-decoration: none;
-}
-
-.menuItems a:hover {
-  font-size: 1.2rem;
-  color: #F53D49;
-}
-
 .contactInfoContainer {
-  width: 35%;
+  width: 33.33%;
   h2 {
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 25px;
   }
-}
-
-.mapContainer {
-  width: 50%;
-  margin-bottom: 15px;
 }
 
 .tradeMark {
@@ -76,28 +41,12 @@
     width: 85%;
   }
 
-  .footerMenu {
-    width: 100%;
-    margin-bottom: 25px;
-    h2 {
-      border-bottom: 1px solid rgba(161, 161, 161, 0.3);
-      padding-bottom: 5px;
-    }
-  }
-
-  .menuItems {
-    flex-direction: row;
-    p {
-      margin-bottom: 5px;
-      font-size: 0.8rem;
-    }
-  }
-
   .contactInfoContainer {
     width: 100%;
+    margin-bottom: 15px;
     h2 {
       border-bottom: 1px solid rgba(161, 161, 161, 0.3);
-      padding-bottom: 5px;
+      padding-bottom: 25px;
     }
   }
 
@@ -105,10 +54,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-
-  .mapContainer {
-    width: 600px;
   }
 
   .tradeMark {
