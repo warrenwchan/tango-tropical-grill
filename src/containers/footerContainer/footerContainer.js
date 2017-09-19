@@ -14,22 +14,22 @@ class FooterContainer extends Component {
             <h2>Catch Us During</h2>
             <div className="contactInfoItems">
               <ContactInfo
-                contactInfo="Monday: 11am - 9pm"
+                contactInfo="Monday: 11am - 8:30pm"
               />
               <ContactInfo
-                contactInfo="Tuesday: 11am - 9pm"
+                contactInfo="Tuesday: 11am - 8:30pm"
               />
               <ContactInfo
-                contactInfo="Wednesday: 11am - 9pm"
+                contactInfo="Wednesday: 11am - 8:30pm"
               />
               <ContactInfo
-                contactInfo="Thursday: 11am - 9pm"
+                contactInfo="Thursday: 11am - 8:30pm"
               />
               <ContactInfo
-                contactInfo="Friday: 11am - 10pm"
+                contactInfo="Friday: 11am - 9pm"
               />
               <ContactInfo
-                contactInfo="Saturday: 11am - 10pm"
+                contactInfo="Saturday: 11am - 9pm"
               />
               <ContactInfo
                 contactInfo="Sunday: Closed"
