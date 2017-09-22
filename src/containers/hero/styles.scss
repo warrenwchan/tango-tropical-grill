@@ -8,13 +8,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: -moz-linear-gradient(-45deg, rgba(26,26,26,0.7) 0%, rgba(26,26,26,0.7) 100%), url("./../../assets/tangotable-min.png") no-repeat center; /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, rgba(26,26,26,0.7) 0%,rgba(26,26,26,0.7) 100%), url("./../../assets/tangotable-min.png") no-repeat center; /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, rgba(26,26,26,0.7) 0%,rgba(26,26,26,0.7) 100%), url("./../../assets/tangotable-min.png") no-repeat center; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc1a1a1a', endColorstr='#cc1a1a1a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
 }
 
 .heroTitleContain {
