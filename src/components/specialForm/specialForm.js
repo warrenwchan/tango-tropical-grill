@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+
 import styles from './styles.scss';
 
 class SpecialForm extends Component {
-  state = {  }
   render() {
-    console.log(this.props.title)
     return (
       <div id="specialsForm">
         <form name="coupon" action="../../pages/received/" data-netlify="true">
@@ -22,7 +22,7 @@ class SpecialForm extends Component {
           </p>
           <p>
             <label className="couponNumberValue">
-              <input type="text" name="coupon" value={this.props.title}/>
+              <input type="text" name="coupon" defaultValue={this.props.title}/>
             </label>
           </p>
           <div className="buttonContain">
@@ -33,6 +33,11 @@ class SpecialForm extends Component {
       </div>
     );
   }
+}
+
+SpecialForm.propTypes = {
+  title: PropTypes.string,
+  onClick: PropTypes.func,
 }
 
 export default SpecialForm;
