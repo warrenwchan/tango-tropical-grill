@@ -13,6 +13,9 @@ class Hero extends Component {
     this.state = {
       tangoBanner: ''
     }
+  }
+
+  componentDidMount() {
     this.getImage('tangoBanner')
   }
 
@@ -25,7 +28,8 @@ class Hero extends Component {
 
   render() {
     const bannerBG = {
-      backgroundImage: `linear-gradient(180deg, rgba(26,26,26,0.5) 0%,rgba(26,26,26,0.8) 100%), url(${this.state.tangoBanner}) `,
+      backgroundImage:
+      `linear-gradient(180deg, rgba(26,26,26,0.5) 0%,rgba(26,26,26,0.8) 100%), url(${this.state.tangoBanner}) `,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
     }
