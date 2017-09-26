@@ -13,6 +13,15 @@
 .heroTitleContain {
   text-align: center;
   color: white;
+  animation: fadeIn 2s ease-in-out;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
 
 .heroTitle {
@@ -20,6 +29,15 @@
   font-weight: 800;
   font-size: 5rem;
   text-transform: uppercase;
+  animation: moveUp 2.5s ease-in-out;
+  @keyframes moveUp {
+    0% {
+      transform: translate(0, -15px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
 }
 
 .heroSubTitle {
@@ -28,6 +46,15 @@
   font-weight: 100;
   letter-spacing: 2px;
   margin: 35px 0 40px;
+  animation: moveDown 2s ease-in-out;
+  @keyframes moveDown {
+    0% {
+      transform: translate(0, 15px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
 }
 
 .heroButton {
