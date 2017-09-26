@@ -1,2 +1,2 @@
-import FavoriteContainer from './favoritContainer';
+import FavoriteContainer from './favoriteContainer';
 export default FavoriteContainer;

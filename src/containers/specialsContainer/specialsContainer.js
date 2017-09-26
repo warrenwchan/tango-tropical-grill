@@ -5,8 +5,6 @@ import styles from './styles.scss';
 import Section from '../../components/section/';
 import Coupon from '../../components/coupon';
 
-import SpecialsData from '../../data/index'
-
 class SpecialsContainer extends Component {
   constructor(props) {
     super(props)

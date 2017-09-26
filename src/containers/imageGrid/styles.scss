@@ -1,5 +1,8 @@
 .imgGrid {
   display: flex;
+  button{
+    padding: 15px !important;
+  }
 }
 
 /*---------- Mobile ----------*/
@@ -7,5 +10,8 @@
 @media (max-width: 600px) {
   .imgGrid {
     max-width: 100vw;
+    button {
+      display: none;
+    }
   }
 }
