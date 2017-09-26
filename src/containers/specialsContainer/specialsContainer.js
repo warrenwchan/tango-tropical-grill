@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import client from  '../../data/contentful';
 import styles from './styles.scss';
 
 import Section from '../../components/section/';
@@ -6,8 +7,29 @@ import Coupon from '../../components/coupon';
 
 import SpecialsData from '../../data/index'
 
-
 class SpecialsContainer extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      coupons: []
+    }
+    this.getCoupons = this.getCoupons.bind(this);
+  }
+
+  componentDidMount() {
+    this.getCoupons()
+  }
+
+  getCoupons() {
+    client.getEntries({content_type: 'coupon', order: 'sys.createdAt'}).then(entries => {
+      entries.items.map((entry, i) => {
+        const coupon = entry.fields
+        let joined = this.state.coupons.concat(coupon);
+        this.setState({coupons: joined})
+      })
+    })
+  }
+
   render() {
     return (
       <Section
@@ -17,14 +39,13 @@ class SpecialsContainer extends Component {
         subText="We know you’re into deals, so try these out. (Tap to claim)"
       >
         <div className="couponList">
-          {SpecialsData.specials.map((special, i) => {
+          {this.state.coupons.map((coupon, i) => {
             return <Coupon
               key={i}
-              title={special.title}
-              desc={special.desc}
-              size={special.size}
-              acpt={special.acpt}
-              image={special.image}
+              title={coupon.couponTitle}
+              desc={coupon.couponDescription}
+              acpt={coupon.couponAcceptions}
+              image={coupon.couponImage.fields.file.url}
             />
           })}
         </div>

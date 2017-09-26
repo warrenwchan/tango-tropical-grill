@@ -5,10 +5,6 @@ import styles from './styles.scss';
 import Section from '../../components/section/';
 import Combo from '../../components/combo/';
 
-import Sub from '../../assets/favorites/s2-min.jpg';
-import Bun from '../../assets/favorites/24-min.jpg';
-import Stir from '../../assets/favorites/40-min.jpg';
-
 class ComboContainer extends Component {
   constructor(props) {
     super(props)
@@ -24,21 +20,17 @@ class ComboContainer extends Component {
   }
 
   getCombos() {
-    {client.getEntries({order: 'sys.createdAt'}).then(entries => {
-      console.log(entries)
+    client.getEntries({content_type: 'combos', order: 'sys.createdAt'}).then(entries => {
       entries.items.map((entry, i) => {
         const combo = entry.fields
         let joined = this.state.combos.concat(combo);
         this.setState({combos: joined})
       })
-    })}
+    })
   }
 
   render() {
-    console.log('a', this.state.combos)
     let comboOrdered = this.state.combos.comboTitle
-    console.log('b', comboOrdered)
-    console.log('c', this.state.combos.sys)
     return (
       <Section
         id="combos"
