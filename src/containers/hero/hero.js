@@ -5,8 +5,6 @@ import FontAwesome from 'react-fontawesome'
 import styles from './styles.scss';
 import NavBar from '../navbar/';
 
-const storage = firebase.storage().ref()
-
 class Hero extends Component {
   constructor() {
     super()
@@ -20,6 +18,7 @@ class Hero extends Component {
   }
 
   getImage(image) {
+    let storage = firebase.storage().ref()
     storage.child(`images/${image}.png`).getDownloadURL().then((url) => {
       this.state[image] = url
       this.setState(this.state)
