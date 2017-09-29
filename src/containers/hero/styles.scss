@@ -27,7 +27,7 @@
 .heroTitle {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
-  font-size: 5rem;
+  font-size: 12rem;
   text-transform: uppercase;
   animation: moveUp 2.5s ease-in-out;
   @keyframes moveUp {
@@ -45,6 +45,7 @@
   font-size: 1.2rem;
   font-weight: 100;
   letter-spacing: 2px;
+  line-height: 1.7rem;
   margin: 35px 0 40px;
   animation: moveDown 2s ease-in-out;
   @keyframes moveDown {
