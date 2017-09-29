@@ -11,6 +11,7 @@
     "gatsby-plugin-react-helmet": "^1.0.6",
     "gatsby-plugin-sass": "^1.0.12",
     "react-fontawesome": "^1.6.1",
+    "react-scrollable-anchor": "^0.5.0",
     "react-stage": "^2.0.8"
   },
   "keywords": [

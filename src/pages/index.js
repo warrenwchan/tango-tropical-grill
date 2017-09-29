@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
+import { goToTop } from 'react-scrollable-anchor'
 
 import Hero from '../containers/hero/'
 import SpecialsContainer from '../containers/specialsContainer'

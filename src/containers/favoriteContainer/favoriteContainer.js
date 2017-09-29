@@ -25,13 +25,11 @@ class FavoriteContainer extends Component {
         let joined = this.state.faves.concat(fave)
         this.setState({faves: joined})
       })
-      console.log('a',this.state.faves)
     })
   }
 
   render() {
     return (
-      <div className="favoriteContainer">
         <Section
           id="favorites"
           title="Favorites"
@@ -42,7 +40,6 @@ class FavoriteContainer extends Component {
             favesArr={this.state.faves}
           />
         </Section>
-      </div>
     );
   }
 }

@@ -1,6 +1,9 @@
 .sectionContainer {
-  margin: 200px auto;
-  width: 1350px;
+  margin: 0 auto;
+  padding-bottom: 75px;
+  border-bottom: 1px solid lightgrey;
+  width: 1080px;
+
   @media (max-width: 1350px) {
     width: 1024px;
   }
@@ -13,11 +16,12 @@
 }
 
 .sectionTitle {
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 25px;
   display: flex;
+  padding-top: 35px;
 }
 
 .sectionIcon {
@@ -26,7 +30,7 @@
 }
 
 .sectionSubText {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #4D4D4D;
   margin-bottom: 25px;
 }

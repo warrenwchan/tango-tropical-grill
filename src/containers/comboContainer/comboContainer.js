@@ -26,7 +26,6 @@ class ComboContainer extends Component {
         let joined = this.state.combos.concat(combo);
         this.setState({combos: joined})
       })
-      console.log("b", this.state.combos)
     })
   }
 
