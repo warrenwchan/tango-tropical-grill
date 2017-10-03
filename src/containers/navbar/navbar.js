@@ -21,6 +21,7 @@ const NavBar = () => (
         <a className="navItem" href="#favorites">Favorites</a>
         <a className="navItem" href="#location">Location</a>
         <a className="navItem" href="#contact">Contact</a>
+        <Link to='/ComingSoon/'><a className="navItem">Menu</a></Link>
       </span>
     </div>
   </div>

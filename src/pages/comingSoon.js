@@ -4,7 +4,7 @@ import styles from './styles.scss';
 
 import Logo from '../assets/tangologo.svg';
 
-class Received extends Component {
+class ComingSoon extends Component {
   render() {
     return (
       <div className="successBg">
@@ -15,7 +15,7 @@ class Received extends Component {
               <div className="logoShadow"></div>
             </div>
             <div className="successText">
-              <h1>😊 Thank you 😊</h1>
+              <h1>Oops, Coming Soon!</h1>
               <h2>Enjoy your meal!</h2>
             </div>
           </div>
@@ -28,4 +28,4 @@ class Received extends Component {
   }
 }
 
-export default Received;
+export default ComingSoon;
