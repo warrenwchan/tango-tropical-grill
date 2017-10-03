@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import firebase from '../../data/firebase.js'
+import client from '../../data/contentful'
 import FontAwesome from 'react-fontawesome'
 
 import styles from './styles.scss';
@@ -17,12 +17,13 @@ class Hero extends Component {
     this.getImage('tangoBanner')
   }
 
-  getImage(image) {
-    let storage = firebase.storage().ref()
-    storage.child(`images/${image}.png`).getDownloadURL().then((url) => {
-      this.state[image] = url
-      this.setState(this.state)
+  getImage() {
+    client.getAsset('6FCIxd7wyskIOQ6iCKWCw2')
+    .then(asset => {
+      const bannerURL = asset.fields.file.url
+      this.setState({tangoBanner: bannerURL})
     })
+    .catch(console.error)
   }
 
   render() {

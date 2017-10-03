@@ -27,6 +27,7 @@ class ComboContainer extends Component {
         this.setState({combos: joined})
       })
     })
+    .catch(console.error)
   }
 
   render() {
