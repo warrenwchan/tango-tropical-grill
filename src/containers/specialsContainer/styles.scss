@@ -3,6 +3,17 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
+  display: none;
+}
+
+.comingSoon {
+  width: 100%;
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #3D3D3D;
+  }
 }
 
 @media (max-width: 600px) {
@@ -12,5 +23,9 @@
 
   .couponList {
     margin-bottom: 0;
+  }
+
+  .comingSoon{
+    padding: 0 25px;
   }
 }

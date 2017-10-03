@@ -36,7 +36,7 @@ class ComboContainer extends Component {
         id="combos"
         title="Combos"
         icon={this.props.icon}
-        subText="Our lunch combos are easy as ABC"
+        subText="Our lunch combos are easy as ABC (Hover to see details)"
       >
         <div className="comboContainer">
           {this.state.combos.length ? (
@@ -48,6 +48,7 @@ class ComboContainer extends Component {
                 sides={combo.comboSides}
                 price={combo.comboPrice}
                 image={combo.comboImage.fields.file.url}
+                items={combo.comboItems}
               />
             })
           ) : (

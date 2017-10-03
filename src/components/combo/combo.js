@@ -21,6 +21,16 @@ class Combo extends Component {
             + Soft Drink
           </p>
           <h2 className="price" >{this.props.price}</h2>
+          <p>Choices:</p>
+          <div className="comboItems">
+            {this.props.items ? (
+              this.props.items.map((item, i) => {
+                return <p key={i}>{item}</p>
+              })
+            ) : (
+              null
+            )}
+          </div>
         </div>
       </div>
     )

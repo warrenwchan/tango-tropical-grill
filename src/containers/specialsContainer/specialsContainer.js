@@ -34,8 +34,10 @@ class SpecialsContainer extends Component {
         id="specials"
         title="Specials"
         icon={this.props.icon}
-        subText="We know you’re into deals, so try these out. (Tap to claim)"
       >
+        <div className="comingSoon">
+          <h2>Hang tight, coming Soon!</h2>
+        </div>
         <div className="couponList">
           {this.state.coupons.map((coupon, i) => {
             return <Coupon
