@@ -14,11 +14,11 @@ class Hero extends Component {
   }
 
   componentDidMount() {
-    this.getImage('tangoBanner')
+    this.getImage('6FCIxd7wyskIOQ6iCKWCw2')
   }
 
-  getImage() {
-    client.getAsset('6FCIxd7wyskIOQ6iCKWCw2')
+  getImage(bannerId) {
+    client.getAsset(bannerId)
     .then(asset => {
       const bannerURL = asset.fields.file.url
       this.setState({tangoBanner: bannerURL})
