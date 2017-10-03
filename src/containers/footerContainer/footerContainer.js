@@ -13,28 +13,27 @@ class FooterContainer extends Component {
         <div className="footerContainerBackground">
           <div className="footerContainer">
             <div className="contactInfoContainer" >
-              <h2>Catch Us During</h2>
+              <h2>Navigation</h2>
               <div className="contactInfoItems">
                 <ContactInfo
-                  contactInfo="Monday: 11am - 8:30pm"
+                  contactLink="#specials"
+                  contactInfo="Specials"
                 />
                 <ContactInfo
-                  contactInfo="Tuesday: 11am - 8:30pm"
+                  contactLink="#combos"
+                  contactInfo="Combos"
                 />
                 <ContactInfo
-                  contactInfo="Wednesday: 11am - 8:30pm"
+                  contactLink="#favorites"
+                  contactInfo="Favorties"
                 />
                 <ContactInfo
-                  contactInfo="Thursday: 11am - 8:30pm"
+                  contactLink="#location"
+                  contactInfo="Location"
                 />
                 <ContactInfo
-                  contactInfo="Friday: 11am - 9pm"
-                />
-                <ContactInfo
-                  contactInfo="Saturday: 11am - 9pm"
-                />
-                <ContactInfo
-                  contactInfo="Sunday: Closed"
+                  contactLink="#contact"
+                  contactInfo="Contact"
                 />
               </div>
             </div>
@@ -68,27 +67,28 @@ class FooterContainer extends Component {
               </div>
             </div>
             <div className="contactInfoContainer" >
-              <h2>Menu</h2>
+              <h2>Catch Us During</h2>
               <div className="contactInfoItems">
                 <ContactInfo
-                  contactLink="#specials"
-                  contactInfo="Specials"
+                  contactInfo="Monday: 11am - 8:30pm"
                 />
                 <ContactInfo
-                  contactLink="#combos"
-                  contactInfo="Combos"
+                  contactInfo="Tuesday: 11am - 8:30pm"
                 />
                 <ContactInfo
-                  contactLink="#favorites"
-                  contactInfo="Favorties"
+                  contactInfo="Wednesday: 11am - 8:30pm"
                 />
                 <ContactInfo
-                  contactLink="#location"
-                  contactInfo="Location"
+                  contactInfo="Thursday: 11am - 8:30pm"
                 />
                 <ContactInfo
-                  contactLink="#contact"
-                  contactInfo="Contact"
+                  contactInfo="Friday: 11am - 9pm"
+                />
+                <ContactInfo
+                  contactInfo="Saturday: 11am - 9pm"
+                />
+                <ContactInfo
+                  contactInfo="Sunday: Closed"
                 />
               </div>
             </div>

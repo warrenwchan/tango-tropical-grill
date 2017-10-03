@@ -7,6 +7,7 @@
   display: block;
   overflow: hidden;
   transition: all 0.1s ease-in-out;
+  filter: grayscale(30%);
   @media (max-width: 600px) {
     width: 100%;
     padding-bottom: 225px;
@@ -16,6 +17,7 @@
 }
 
 .combo:hover {
+  filter: grayscale(0%);
   .slideInfoCard {
     bottom: 0px;
   }
