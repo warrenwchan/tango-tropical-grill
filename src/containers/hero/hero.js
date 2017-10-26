@@ -30,9 +30,6 @@ class Hero extends Component {
     const bannerBG = {
       backgroundImage:
       `linear-gradient(180deg, rgba(26,26,26,0.5) 0%,rgba(26,26,26,0.8) 100%), url(${this.state.tangoBanner}) `,
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
-      backgroundAttachment: 'fixed',
     }
 
     return (
