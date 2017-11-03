@@ -43,10 +43,8 @@ class Hero extends Component {
           </div>
         </div>
         <div className="heroJump">
-          <a href="#specials">
-            <FontAwesome
-              name="angle-down"
-            />
+          <a style={{color:'inherit'}} href="#specials">
+            <FontAwesome name="angle-down" size="3x"/>
           </a>
         </div>
       </div>

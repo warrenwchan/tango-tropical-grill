@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Link from "gatsby-link"
-import Helmet from "react-helmet"
+import { Helmet } from "react-helmet"
 import { goToTop } from 'react-scrollable-anchor'
 
 import Hero from '../containers/hero/'
@@ -13,6 +13,7 @@ import FooterContainer from '../containers/footerContainer'
 import SectionSeparator from '../components/sectionSeparator'
 
 import scent from '../assets/scent.svg';
+import favicon from '../favicon.png';
 
 export default class Template extends React.Component {
   static propTypes = {
@@ -22,14 +23,14 @@ export default class Template extends React.Component {
   render() {
     return (
       <div>
-        <Helmet
-          title="Tango Tropical Grill"
-          meta={[
-            { name: "description", content: "Tango Tropical Grill is a casual dining restaurant that specializes in Thai and Vietnamese food located in Calgary, Alberta." },
-            { name: "keywords", content: "Casual restaurant offering a mix of Vietnamese and Thai dishes, including pho, along with a bar" },
-            { name: "author", content: "Warren Chan" }
-          ]}
-        />
+        <Helmet>
+          <title>Tango Tropical Grill</title>
+          <meta charSet="utf-8"/>
+          <meta name="description" content="Tango Tropical Grill is a casual dining restaurant that specializes in Thai and Vietnamese food located in Calgary, Alberta."/>
+          <meta name="keywords" content="Casual restaurant offering a mix of Vietnamese and Thai dishes, including pho, along with a bar"/>
+          <meta name="author" content="Warren Chan"/>
+          <link rel="shortcut icon" type="image/png" href={favicon} />
+        </Helmet>
         <Hero />
         <SpecialsContainer
           icon={scent}

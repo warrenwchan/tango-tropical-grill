@@ -86,28 +86,20 @@
   position: absolute;
   bottom: 30px;
   animation: 1s infinite ease bounce;
-  a {
-    color: inherit !important;
-    text-decoration: none !important;
-    font-size: inherit !important;
-    font-family: inherit !important;
-    font-weight: inherit !important;
-    line-height: inherit !important;
-  }
 }
 
 @keyframes bounce {
   0% {
     transform: translate(0, 0);
-    color: #F53D49;
+    color: #FFFFFF;
   }
   50% {
-    transform: translate(0, 10px);
-    color: white;
+    transform: translate(0, -10px);
+    color: #F53D49;
   }
   100% {
     transform: translate(0, 0);
-    color: #F53D49;
+    color: #FFFFFF;
   }
 }
 
