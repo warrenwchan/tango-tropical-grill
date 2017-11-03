@@ -1,6 +1,7 @@
 .heroImageContainer {
   height: 100vh;
   position: relative;
+  border-top: 4px solid #F53D49;
 }
 
 .heroBackgroundImage {
@@ -71,6 +72,7 @@
   letter-spacing: 2px;
   padding: 10px 25px;
   border: 1px solid white;
+  border-radius: 25px;
 }
 
 .heroButton:hover {

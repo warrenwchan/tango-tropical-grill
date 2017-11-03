@@ -29,8 +29,7 @@ class Hero extends Component {
   render() {
     const bannerBG = {
       backgroundImage:
-      `linear-gradient(60deg, rgba(164,57,49,0.25) 0%,rgba(31,28,24,0.8) 100%),
-       url(${this.state.tangoBanner}) `
+      `linear-gradient(135deg, rgba(74, 23, 23, 0.8) 0%,rgba(26, 26, 26, 0.8) 100%), url(${this.state.tangoBanner}) `
     }
 
     return (
@@ -39,7 +38,7 @@ class Hero extends Component {
         <div className="heroBackgroundImage" style={bannerBG}>
           <div className="heroTitleContain" >
             <p className="heroTitle">Tango</p>
-            <p className="heroSubTitle" >Tropical Grill <br/> Vietnamese & Thai Cuisine </p>
+            <p className="heroSubTitle"> Tropical Grill Vietnamese & Thai Cuisine </p>
             <a className="heroButton" data-scroll href="#contact">Contact</a>
           </div>
         </div>
