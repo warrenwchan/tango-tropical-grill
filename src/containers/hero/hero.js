@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import client from '../../data/contentful'
-import FontAwesome from 'react-fontawesome'
+import client from '../../data/contentful';
+import FontAwesome from 'react-fontawesome';
 
 import styles from './styles.scss';
 import NavBar from '../navbar/';
@@ -29,7 +29,8 @@ class Hero extends Component {
   render() {
     const bannerBG = {
       backgroundImage:
-      `linear-gradient(180deg, rgba(26,26,26,0.5) 0%,rgba(26,26,26,0.8) 100%), url(${this.state.tangoBanner}) `,
+      `linear-gradient(60deg, rgba(164,57,49,0.25) 0%,rgba(31,28,24,0.8) 100%),
+       url(${this.state.tangoBanner}) `
     }
 
     return (
