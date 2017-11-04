@@ -29,7 +29,7 @@ class Hero extends Component {
   render() {
     const bannerBG = {
       backgroundImage:
-      `linear-gradient(135deg, rgba(74, 23, 23, 0.8) 0%,rgba(26, 26, 26, 0.8) 100%), url(${this.state.tangoBanner}) `
+      `linear-gradient(135deg, rgba(26, 26, 26, 0.5) 0%,rgba(26, 26, 26, 0.8) 100%), url(${this.state.tangoBanner}) `
     }
 
     return (
