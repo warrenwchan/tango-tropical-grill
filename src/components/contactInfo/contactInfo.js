@@ -2,6 +2,7 @@ import React, { Componenet } from 'react';
 import styles from './styles.scss'
 
 import FontAwesome from 'react-fontawesome'
+import Link from 'gatsby-link';
 
 const Icon = (contactIcon) => {
   if(contactIcon) {

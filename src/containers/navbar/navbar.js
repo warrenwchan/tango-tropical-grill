@@ -16,6 +16,7 @@ const NavBar = () => (
         </Link>
       </div>
       <span className="navItems">
+        <Link className="navItem" to="/menu/">Menu</Link>
         <a className="navItem" href="#specials">Specials</a>
         <a className="navItem" href="#combos">Combos</a>
         <a className="navItem" href="#favorites">Favorites</a>
