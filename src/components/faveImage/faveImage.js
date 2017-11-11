@@ -11,10 +11,13 @@ class faveImage extends Component {
     }
 
     return (
-      <div className="faveImageContainer" style={faveBg}>
-        <div className="faveImage">
-          <p className="dishNumber" >{this.props.number}</p>
-          <p className="dishName">{this.props.name}</p>
+      <div className="faveImageContainer">
+        <div className="faveCard">
+          <div className="faveImage" style={faveBg}></div>
+          <div className="faveInfo">
+            <p className="dishName">{this.props.name}</p>
+            <p className="dishNumber" >{this.props.number}</p>
+          </div>
         </div>
       </div>
     );

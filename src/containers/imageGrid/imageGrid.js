@@ -16,12 +16,14 @@ class ImageGrid extends Component {
       textAlign: 'center'
     };
 
-    const settings = {
+    let settings = {
       arrows: true,
       autoplay: true,
       autoplaySpeed: 3000,
+      pauseOnHover: true,
       slidesToShow: 1,
-      speed: 700
+      speed: 800,
+      swipe: true,
     };
 
     let faves = this.props.favesArr
