@@ -6,6 +6,12 @@ html {
 	width: 100%;
 	font-size: 14px;
 	font-family: 'Open Sans', sans-serif;
+	@media (max-width: 1024px) {
+    width: 1080px;
+	}
+	@media (max-width: 600px) {
+		width: 100%;
+	}
 }
 
 body, div, span, applet, object, iframe,

@@ -44,11 +44,11 @@
   @media (max-width: 600px) {
     height: auto;
     width: 80%;
-    padding: 0;
+    padding: 10px;
+    bottom: 0;
     opacity: 1;
-    position: static;
     box-shadow: none;
-    margin: 15px auto;
+    margin: 0 auto;
   }
 }
 
@@ -57,8 +57,7 @@
   letter-spacing: 2px;
   @media (max-width: 600px) {
     font-size: 0.9rem;
-    position: static;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
   }
 }
 
@@ -68,7 +67,6 @@
   opacity: 0.8;
   @media (max-width: 600px) {
     font-size: 3rem;
-    position: static;
     opacity: 1;
   }
 }

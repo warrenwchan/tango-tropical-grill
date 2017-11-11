@@ -18,7 +18,7 @@ class ImageGrid extends Component {
 
     let settings = {
       arrows: true,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 3000,
       pauseOnHover: true,
       slidesToShow: 1,

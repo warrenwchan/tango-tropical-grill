@@ -26,12 +26,12 @@
 
 .slideInfoCard {
   width: 90%;
-  height: 65%;
+  height: 70%;
   border-radius: 0 0 10px 10px;
   padding: 5%;
-  background: linear-gradient(60deg, rgba(164,57,49,0.25) 0%,rgba(31,28,24,0.8) 100%);
+  background: linear-gradient(60deg, rgba(107, 36, 31, 0.25) 0%,rgba(31,28,24,0.8) 100%);
   position: absolute;
-  bottom: -210px;
+  bottom: -230px;
   color: white;
   transition: all 0.1s ease-in-out;
   @media (max-width: 600px) {
