@@ -33,9 +33,7 @@ class ComboContainer extends Component {
   render() {
     let comboOrdered = this.state.combos.comboTitle
     return (
-      <div className="comboSectionContainer">
-        <div className="accentBox"></div>
-        <Section
+      <Section
         id="combos"
         title="Combos"
         icon={this.props.icon}
@@ -59,7 +57,6 @@ class ComboContainer extends Component {
           )}
         </div>
       </Section>
-      </div>
     );
   }
 }
